@@ -36,8 +36,6 @@ const EventVenues = () => {
       <div className="map">
         <img src="assets/images/map-image.jpg" alt=""></img>
       </div>
-
-      
     </div>
   );
 };

@@ -17,8 +17,10 @@ const Carousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, 
+    slidesToShow: 4,
     slidesToScroll: 1,
+    centerMode: true,  // To make it center aligned
+    focusOnSelect: true,  // To focus on the selected image
     responsive: [
       {
         breakpoint: 1024,
@@ -56,13 +58,24 @@ const Carousel = () => {
   };
 
   return (
-    <div className="carousel-container" style={{ paddingLeft: '3rem', paddingRight: '3rem' }}>
+    <div className="carousel-container" style={{ 
+      width: '100%', 
+      margin: '0 auto', 
+      gap:'10px'
+    }}>
       <Slider {...settings}>
         {images.map((img, index) => (
-          <div key={index} onClick={handleImageClick} >
-            <img src={img} alt={`Event ${index + 1}`} className="carousel-image" style={{
-              
-              }} />
+          <div key={index} onClick={handleImageClick} style={{ padding: '0 3rem' }}>
+            <img 
+              src={img} 
+              alt={`Event ${index + 1}`} 
+              className="carousel-image" 
+              style={{
+                width: '90%',
+                height: 'auto', 
+                objectFit: 'cover',         
+              }} 
+            />
           </div>
         ))}
       </Slider>
@@ -71,3 +84,4 @@ const Carousel = () => {
 };
 
 export default Carousel;
+

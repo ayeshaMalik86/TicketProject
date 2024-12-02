@@ -1,14 +1,16 @@
 import React from "react";
-import NavBar from "./components/NavBar"; // Import the Navbar component
+import NavBar from "./components/NavBar"; 
 import HomePage from "./pages/Home";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <div>
-      <NavBar /> {/* Display the navbar */}
+      <NavBar /> 
       <main>
         <HomePage/>
       </main>
+      <Footer/>
     </div>
   );
 };

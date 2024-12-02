@@ -1,11 +1,13 @@
 import React from "react";
-import NavBar from "./NavBar"; // Import your Navbar component
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <NavBar /> {/* Navbar appears at the top */}
-      <main>{children}</main> {/* This renders the content of each page */}
+      <NavBar /> 
+      <main>{children}</main> 
+      <Footer/>
     </>
   );
 };
