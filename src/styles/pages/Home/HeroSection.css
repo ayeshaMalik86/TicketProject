@@ -1,0 +1,130 @@
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .hero-background {
+    background-image: url("https://via.placeholder.com/1920x800");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 38rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  /* Countdown Timer */
+  .countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    background: #8c88885a;
+    height: 6rem;
+  }
+
+  .timer{
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    padding: 1rem;
+  }
+
+  .timer-item{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timer-item h2 {
+    order: 2;
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .timer-item p {
+    order: 1;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Event Info */
+  .event-info {
+    margin-top: 30px;
+    padding: 5rem;
+  }
+
+  .next-show {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+    margin-top: -6rem;
+    position: relative;
+    animation: float 2s ease-in-out infinite;
+  }
+
+  .event-info .next-show p{
+    font-size: 0.8rem;
+  }
+  
+  .arrow-icon {
+    align-self: center;
+    height: 1rem;
+    width: 2rem; 
+    position: relative; 
+  }
+
+  @keyframes float {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-5px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+  .event-info h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+  }
+  
+  .event-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+    padding-bottom: 1rem;
+  }
+  
+  .cta-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+  }
+  
+  .slick-prev, .slick-next {
+    background-color: transparent;  
+    border: 1px solid #ccc;        
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 10; 
+  }
+  
+  .slick-prev span, .slick-next span {
+    font-size: 20px;   
+    color: grey;       
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    color: #888;  
+  }
+  
