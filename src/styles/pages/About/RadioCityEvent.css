@@ -1,0 +1,153 @@
+  .event-header{
+    height: 34rem;
+    padding: 2rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+
+  .map-card{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event-header h1{
+    color: white;
+    font-size: 3rem;
+  }
+
+  .radio-event-heading{
+    padding: 2rem;
+  }
+
+  .radio-header { 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 34rem;
+    text-align: left;
+  }
+  
+  .radio-header h1 {
+    font-size: 3rem;
+  }
+
+  .radio-event-image img{
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    display: block;
+  }
+
+  .radio-map-img img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+  }
+  
+  .radio-event-content{
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    margin-top: -20rem;
+  }
+
+  .radio-header p {
+    font-size: 1.2rem;
+  }
+  
+  .radio-content {
+    margin-top: -15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+  }
+  
+  .radio-purchase-button {
+    margin-top: 10px;
+    background-color: #343639;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .radio-purchase-button:hover {
+    background-color: #909296;
+  }
+
+  .radio-event-details {
+    text-align: left;
+    padding-left:1rem ;
+    padding-bottom: 0.8rem;
+    border-right: 1px dotted #d7dadc;
+    border-bottom: 1px dotted #d7dadc;
+    display: block;
+  }
+
+  .radio-event-details h1{
+    font-size: 1.5rem;
+  }
+  
+  .radio-event-details .ticket-cost{
+    color: #7e7c7c;
+  }
+
+  .radio-purchase-button{
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+  }
+
+  @media (max-width: 992px) {  
+    .radio-event-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .radio-event-image img{
+        max-width: 400px;
+        margin-top: 4rem;
+    }
+    
+    .radio-purchase-button {
+      margin-top: 10px;
+      background-color: #343639;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    
+    @media (max-width: 480px) {    
+        .radio-purchase-button {
+            font-size: 0.8rem;
+        }
+          .radio-event-content {
+            display: flex;
+            justify-content: space-between;
+          }
+             
+          .radio-event-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #444;
+          }
+
+          .radio-event-image img{
+            max-width: 350px;
+          }
+
+          .map-card{
+            max-width: 350px;
+          }
+         .radio-event-details{
+            border-left: 1px dotted #d7dadc;
+         }
+
+    }
+  }

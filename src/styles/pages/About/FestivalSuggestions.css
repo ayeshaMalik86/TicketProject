@@ -1,0 +1,79 @@
+.festival-suggestions {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    height: auto; /* Adjust to content */
+  }
+  
+  .festival-suggestions h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding: 1.7rem;
+    text-align: left;
+  }
+  
+  .festival-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .festival-card {
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Default width */
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .festival-image {
+    object-fit: cover;
+    width: 100%; /* Ensure images are responsive */
+    height: auto;
+  }
+  
+  .festival-info {
+    padding: 15px;
+  }
+  
+  .festival-date {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+  
+  .festival-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  /* Responsive Design for 768px */
+  @media (max-width: 768px) {
+    .festival-suggestions h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .festival-cards {
+      flex-direction: column; /* Stack cards vertically */
+      gap: 1.5rem;
+    }
+  
+    .festival-card {
+      width: 80%; /* Increase card width */
+      margin: 0 auto; /* Center cards */
+    }
+  
+    .festival-title {
+      font-size: 1.25rem; /* Adjust font size for better readability */
+    }
+  
+    .festival-date {
+      font-size: 0.9rem;
+    }
+  }
+  

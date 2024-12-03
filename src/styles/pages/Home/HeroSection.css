@@ -5,8 +5,9 @@
   overflow: hidden;
 }
 
+
+
 .hero-background {
-  background-image: url("https://via.placeholder.com/1920x800");
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -42,6 +43,7 @@
   order: 2;
   font-size: 3rem;
   margin: 0;
+  color: #ffffff;
 }
 
 .timer-item p {
@@ -90,6 +92,7 @@
 .event-info h1 {
   font-size: 3rem;
   margin: 10px 0;
+  color: #ffffff;
 }
 
 .event-info p {

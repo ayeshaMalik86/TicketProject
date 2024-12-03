@@ -1,0 +1,127 @@
+.event-details-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  .event-content{
+    width: 60%;
+  }
+  
+  .about-section, .restricted-section, .directions-section, .tickets-section {
+    margin-bottom: 30px;
+  }
+
+  .tickets-section h2{
+    font-size: 1.5Frem;
+  }
+  
+  h1, h2 {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .about-section p a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  .about-section p a:hover {
+    text-decoration: underline;
+  }
+  
+  .restricted-section ul {
+    list-style-type: none;
+  }
+  
+  .directions-section a {
+    color: #95999b;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .tickets-section img{
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .directions-section a:hover {
+    text-decoration: underline;
+  }
+
+  .ticket-item-img{
+    cursor: pointer;
+  }
+
+  .ticket-item-img img:hover{
+    background: #98989b;
+  }
+
+  .ticket-item-img img{
+    background: #646467;
+    padding: 1rem;
+  }
+
+  .ticket-item-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tickets-section{
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    padding: 1rem;
+  }
+  
+  .tickets-section .ticket-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #ffffff;
+    border-bottom: 1px dotted #d7dadc;
+  }
+  
+  .tickets-section .ticket-item h3 {
+    margin: 0 0 5px 0;
+  }
+  
+  .tickets-section .ticket-item p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .event-details-container {
+      margin: 10px;
+      flex-direction: column;
+    }
+
+    .tickets-section h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .event-content{
+        width: 100%;
+    }
+  
+    h1, h2 {
+      font-size: 1.2rem;
+    }
+  
+    .tickets-section .ticket-item {
+      font-size: 14px;
+    }
+  
+    .restricted-section ul {
+      margin-left: 10px;
+      font-size: 14px;
+    }
+  
+    .directions-section a {
+      font-size: 14px;
+    }
+  }
+  
