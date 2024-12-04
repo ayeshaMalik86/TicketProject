@@ -25,7 +25,7 @@ const TicketsSection = () => {
           <select>
             <option>Price</option>
           </select>
-          <button >Submit</button>
+          <button className="filter-btn">Submit</button>
         </div>
       </div>
     </section>

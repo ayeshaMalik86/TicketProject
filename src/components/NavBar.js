@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom"; 
 import "../styles/components/NavBar.css";
 
 const Navbar = () => {
@@ -8,11 +8,11 @@ const Navbar = () => {
 
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
-    setMenuOpen(false); // Close menu on tab click (for mobile)
+    setMenuOpen(false); 
   };
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen); // Toggle the mobile menu
+    setMenuOpen(!menuOpen);
   };
 
   return (
@@ -38,7 +38,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/about" // Update to use React Router's Link component
+              to="/about" 
               className={activeTab === "about" ? "active" : ""}
               onClick={() => handleTabClick("about")}
             >
@@ -47,7 +47,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/rent" // Update the link for Rent Venue
+              to="/rent" 
               className={activeTab === "rent" ? "active" : ""}
               onClick={() => handleTabClick("rent")}
             >
@@ -56,7 +56,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/shows" // Update the link for Shows & Events
+              to="/shows"
               className={activeTab === "shows" ? "active" : ""}
               onClick={() => handleTabClick("shows")}
             >
@@ -65,7 +65,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/tickets" // Update the link for Tickets
+              to="/tickets"
               className={activeTab === "tickets" ? "active" : ""}
               onClick={() => handleTabClick("tickets")}
             >

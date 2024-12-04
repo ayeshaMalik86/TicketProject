@@ -10,9 +10,10 @@ body {
     text-align: center;
   }
   
-  h1 {
+  .tickets-page h1 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
+    font-weight: bold;
   }
   
   .tickets-grid {
