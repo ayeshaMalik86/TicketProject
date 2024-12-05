@@ -1,6 +1,7 @@
 .venues-container {
   padding: 20px;
   text-align: center;
+  background: #ffffff;
 }
 
 .venues-title {
@@ -13,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  flex-wrap: wrap; 
 }
 
 .venue-card {
@@ -23,7 +24,7 @@
   position: relative;
   background-color: #ffffff;
   text-align: left;
-  width: calc(33.33% - 20px); /* Default: 3 cards per row with gap */
+  width: calc(33.33% - 20px); 
 }
 
 .venue-image img {

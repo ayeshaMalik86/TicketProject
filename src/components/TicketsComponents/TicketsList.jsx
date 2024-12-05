@@ -59,10 +59,13 @@ const TicketsList = () => {
       <div className="tickets-grid">
         {tickets.map((ticket, index) => (
           <div key={index} className="ticket-card">
-            <img src={ticket.img} alt={ticket.title} />
-            <div className="ticket-section-img"></div>
+             <div className="ticket-image-container">
+              <img src={ticket.img} alt={ticket.title} className="ticket-image" />
+              <div className="image-overlay">
+              <p>1 ticket <br/>from <strong>{ticket.price}</strong></p>
+              </div>
+            </div>
             <div className="ticket-info">
-            <p className="price">1 ticket from <strong>{ticket.price}</strong></p>
               <p className="tickets-left">There Are {ticket.ticketsLeft} Tickets Left For This Show</p>
               <h3>{ticket.title}</h3>
               <p><img src="/assets/images/clock.png" alt="location"/> {ticket.time}</p>

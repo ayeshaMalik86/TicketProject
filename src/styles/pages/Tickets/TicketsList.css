@@ -26,6 +26,27 @@ body {
     background: #efeeee;
     overflow: hidden;
     text-align: left;
+    position: relative;
+  }
+
+  .ticket-image-container {
+    position: relative;
+  }
+
+  .ticket-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .image-overlay {
+    position: absolute;
+    bottom: 0;
+    color: #fff; 
+    font-size: 1rem;
+    background-color: #656c74d6;
+    margin: 2rem;
+    padding: 0.7rem 1.7rem;
   }
   
   .ticket-card img {
@@ -45,11 +66,6 @@ body {
   .ticket-info img{
     width: 1rem;
     height: 1rem;
-  }
-  
-  .ticket-info .price {
-    font-size: 1.1rem;
-    color: #333;
   }
 
   .ticket-info h3 {
@@ -91,6 +107,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 3rem;
+    flex-wrap: wrap;
   }
   
   .page-btn {

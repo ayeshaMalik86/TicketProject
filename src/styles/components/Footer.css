@@ -47,12 +47,21 @@
     justify-content: space-around;
     margin-top: 20px;
     text-align: left;
+    color: #393a3b;
+  }
+
+  .footer-content h3{
+    margin-bottom: 2rem;
+  }
+
+  .footer-content p{
+    line-height: 0.438rem;
+    font-size: 0.9rem;
   }
   
 
   .footer-column-links{
     text-align: center;
-    font-weight: 300;
   }
 
  .footer-column-links ul {
@@ -63,6 +72,7 @@
   .footer-column-links ul {
     list-style-type: none;
     padding: 0;
+    color: #393a3b;
   }
   
   .footer-column-links ul li a {
@@ -81,6 +91,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 6rem 0 6rem;
+    color: #393a3b;
   }
 
   .footer-bottom a {
@@ -104,7 +115,7 @@
   .footer-below{
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 2rem 0;
     align-items: center;
     border-top: solid 1px rgba(0, 0, 0, 0.244);
     width: 80%;
@@ -133,7 +144,7 @@
 
   @media(max-width:768px){
     .newsletter {
-      flex-direction: column; /* Stack items vertically */
+      flex-direction: column; 
       text-align: center;
   }
 
@@ -145,6 +156,10 @@
 
     .footer-content{
       flex-direction: column;
+    }
+
+    .footer-content p{
+      line-height: 1px;
     }
 
     .footer-column-time{
@@ -166,4 +181,6 @@
     .footer-below{
       flex-direction: column;
     }
+
+
   }
